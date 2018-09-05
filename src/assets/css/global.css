@@ -1,4 +1,6 @@
-html,body {
+html,body,#app {
   height: 100%;
   background-color: #2b4b6b;
+  padding: 0;
+  margin: 0;
 }

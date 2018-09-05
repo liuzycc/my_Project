@@ -22,6 +22,7 @@ export default {
         const { data: res } = await this.$http.post('login', this.loginform)
         console.log(this.loginform)
         if (res.meta.status !== 200) return this.$message('登录失败')
+        window.sessionStorage.setItem('token', res.data.token)
         this.$router.push('/home')
       })
     }
